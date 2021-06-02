@@ -54,7 +54,7 @@ public class Killaura extends Module {
 				new SettingToggle("Armor Stands", false).withDesc("Attack armor stands"),
 				new SettingToggle("Triggerbot", false).withDesc("Only attacks the entity you are looking at"),
 				new SettingToggle("MultiAura", false).withDesc("Atacks multiple entities at once").withChildren(
-						new SettingSlider("Targets", 1, 20, 3, 0).withDesc("How many targets to attack at once")),
+						new SettingSlider("Targets", 1, 100, 3, 0).withDesc("How many targets to attack at once")),
 				new SettingRotate(true),
 				new SettingToggle("Thru Walls", false).withDesc("Attack through walls"),
 				new SettingToggle("1.9 Delay", false).withDesc("Uses the 1.9+ delay between hits"),

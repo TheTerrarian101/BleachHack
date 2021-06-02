@@ -207,13 +207,13 @@ public class UI extends Module {
 			int watermarkMode = getSetting(0).asToggle().getChild(3).asToggle().getChild(0).asMode().mode;
 
 			if (watermarkMode == 0) {
-				MutableText text1 = new LiteralText("Bleach").styled(s -> s.withColor(TextColor.fromRgb(0xffbf30)));
+				MutableText text1 = new LiteralText("Raphene").styled(s -> s.withColor(TextColor.fromRgb(0xffbf30)));
 				MutableText text2 = new LiteralText("Hack ").styled(s -> s.withColor(TextColor.fromRgb(0xffafcc)));
 				MutableText text3 = new LiteralText(BleachHack.VERSION).styled(s -> s.withColor(TextColor.fromRgb(0xf0f0f0)));
 
 				lines.add(0, text1.append(text2).append(text3));
 			} else {
-				lines.add(0, new LiteralText("\u00a7a> BleachHack " + BleachHack.VERSION));
+				lines.add(0, new LiteralText("\u00a7a> RapheneHack " + BleachHack.VERSION));
 			}
 		}
 

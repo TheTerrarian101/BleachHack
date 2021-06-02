@@ -108,12 +108,12 @@ public class ModuleClickGuiScreen extends ClickGuiScreen {
 
 		super.render(matrix, mouseX, mouseY, delta);
 
-		textRenderer.draw(matrix, "BleachHack-" + BleachHack.VERSION + "-" + SharedConstants.getGameVersion().getName(), 3, 3, 0x305090);
-		textRenderer.draw(matrix, "BleachHack-" + BleachHack.VERSION + "-" + SharedConstants.getGameVersion().getName(), 2, 2, 0x6090d0);
+		textRenderer.draw(matrix, "RapheneHack-" + BleachHack.VERSION + "-" + SharedConstants.getGameVersion().getName(), 3, 3, 0x9a39bd);
+		textRenderer.draw(matrix, "RapheneHack-" + BleachHack.VERSION + "-" + SharedConstants.getGameVersion().getName(), 2, 2, 0x9a39bd);
 
 		if (ModuleManager.getModule("ClickGui").getSetting(2).asToggle().state) {
-			textRenderer.drawWithShadow(matrix, "Current prefix is: \"" + Command.PREFIX + "\" (" + Command.PREFIX + "help)", 2, height - 20, 0x99ff99);
-			textRenderer.drawWithShadow(matrix, "Use " + Command.PREFIX + "clickgui to reset the clickgui", 2, height - 10, 0x9999ff);
+			textRenderer.drawWithShadow(matrix, "Current prefix is: \"" + Command.PREFIX + "\" (" + Command.PREFIX + "help)", 2, height - 20, 0x9a39bd);
+			textRenderer.drawWithShadow(matrix, "Use " + Command.PREFIX + "clickgui to reset the clickgui", 2, height - 10, 0x9a39bd);
 		}
 	}
 }

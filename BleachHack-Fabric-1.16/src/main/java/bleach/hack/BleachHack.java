@@ -44,7 +44,7 @@ public class BleachHack implements ModInitializer {
 
 	public BleachHack() {
 		if (instance != null) {
-			throw new RuntimeException("A BleachHack instance already exists.");
+			throw new RuntimeException("A RapheneHack instance already exists.");
 		}
 	}
 
@@ -53,11 +53,11 @@ public class BleachHack implements ModInitializer {
 		long initStartTime = System.currentTimeMillis();
 
 		if (instance != null) {
-			throw new RuntimeException("BleachHack has already been initialized.");
+			throw new RuntimeException("RapheneHack has already been initialized.");
 		}
 
 		instance = this;
-		logger = LogManager.getFormatterLogger("BleachHack");
+		logger = LogManager.getFormatterLogger("RapheneHack");
 
 		//TODO base-rewrite
 		//this.eventBus = new EventBus();
@@ -79,6 +79,6 @@ public class BleachHack implements ModInitializer {
 			BleachTitleScreen.customTitleScreen = false;
 		}
 
-		logger.log(Level.INFO, "Loaded BleachHack in %d ms.", System.currentTimeMillis() - initStartTime);
+		logger.log(Level.INFO, "Loaded RapheneHack in %d ms.", System.currentTimeMillis() - initStartTime);
 	}
 }

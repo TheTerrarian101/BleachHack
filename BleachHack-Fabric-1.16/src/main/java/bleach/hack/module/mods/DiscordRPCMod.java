@@ -63,7 +63,7 @@ public class DiscordRPCMod extends Module {
 		BleachHack.logger.info("Initing Discord RPC...");
 		DiscordRPCManager.initialize(silent ? "727434331089272903" : "740928841433743370",
 				new DiscordEventHandlers.Builder()
-				.withReadyEventHandler(user -> BleachHack.logger.info(user.username + "#" + user.discriminator + " is big gay"))
+				.withReadyEventHandler(user -> BleachHack.logger.info(user.username + "#" + user.discriminator + " is gaming"))
 				.build());
 
 		super.onEnable();
@@ -107,7 +107,7 @@ public class DiscordRPCMod extends Module {
 					text1 = mc.player.getEntityName();
 					break;
 				case 6:
-					text1 = "<- bad client";
+					text1 = "<- best client";
 					break;
 			}
 
@@ -155,7 +155,7 @@ public class DiscordRPCMod extends Module {
 
 			DiscordRPCManager.updatePresence(
 					new DiscordRichPresence.Builder(text2)
-					.setBigImage(silent ? "mc" : "bh", silent ? "Minecraft " + SharedConstants.getGameVersion().getName() : "BleachHack " + BleachHack.VERSION)
+					.setBigImage(silent ? "mc" : "bh", silent ? "Minecraft " + SharedConstants.getGameVersion().getName() : "RapheneHack " + BleachHack.VERSION)
 					.setDetails(text1).setStartTimestamps(start).build());
 		}
 

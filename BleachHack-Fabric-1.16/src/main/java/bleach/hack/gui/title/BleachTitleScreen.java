@@ -86,7 +86,7 @@ public class BleachTitleScreen extends WindowScreen {
 		addWindow(new Window(width / 8,
 				height / 8,
 				width / 8 + (width - width / 4),
-				height / 8 + (height - height / 4), "BleachHack", new ItemStack(Items.MUSIC_DISC_CAT)));
+				height / 8 + (height - height / 4), "RapheneHack", new ItemStack(Items.MUSIC_DISC_CAT)));
 
 		int w = getWindow(0).x2 - getWindow(0).x1;
 		int h = getWindow(0).y2 - getWindow(0).y1;
@@ -125,7 +125,7 @@ public class BleachTitleScreen extends WindowScreen {
 					MutableText bhText = new LiteralText("");
 
 					int i = 0;
-					for (char c: "BleachHack".toCharArray()) {
+					for (char c: "RapheneHack".toCharArray()) {
 						int fi = i++;
 						bhText.append(
 								new LiteralText(String.valueOf(c)).styled(s -> s.withColor(TextColor.fromRgb(UI.getRainbowFromSettings(fi)))));
@@ -135,7 +135,7 @@ public class BleachTitleScreen extends WindowScreen {
 				}));
 
 		// Version Text
-		getWindow(0).addWidget(new WindowTextWidget(BleachHack.VERSION, true, WindowTextWidget.TextAlign.MIDDLE, 1.5f, w / 2, h / 4 - 6, 0xffc050));
+		getWindow(0).addWidget(new WindowTextWidget(BleachHack.VERSION, true, WindowTextWidget.TextAlign.MIDDLE, 1.5f, w / 2, h / 4 - 6, 0xff50eb));
 
 		// Splash
 		if (!splash.isEmpty()) {
@@ -165,7 +165,7 @@ public class BleachTitleScreen extends WindowScreen {
 			protected void drawBar(MatrixStack matrix, int mouseX, int mouseY, TextRenderer textRend) {
 				super.drawBar(matrix, mouseX, mouseY, textRend);
 
-				Window.verticalGradient(matrix, x1 + 1, y1 + 12, x2 - 1, y2 - 1, 0xff606090, 0x00606090);
+				Window.verticalGradient(matrix, x1 + 1, y1 + 12, x2 - 1, y2 - 1, 0xff7f6090, 0x007f6090);
 			}
 		});
 
